@@ -405,3 +405,11 @@ header {
   background-color: #338bb4;
   color: white;
 }
+
+
+#texto-escenario {
+  outline: none;
+  opacity: 0.8;
+  border: none;
+  font-family: Arial, sans-serif;
+}
