@@ -22,7 +22,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%;  
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1040;
   display: none;
@@ -369,3 +369,73 @@ header {
 .animacion-salida {
   animation: animacion-salida-derecha 1s;
 }
+
+ /********************** Estilos css de trama ******************************/
+#estilo-cuerpo {                                 /* Body de trama */
+  font-family:sans-serif;
+  background-color: #0ecaee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#trama-cont {
+  text-align: center;
+}
+
+#titulo {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(32, 85, 110);
+  border: 1.6px solid rgb(32, 85, 110);
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #0ecaee;
+}
+
+#escenario {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  color: rgb(132, 132, 145);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#trama-bt {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 30px;  
+  max-width: 900px;
+  margin:  40px auto;
+}
+
+#trama-bt button {
+  background-color: #20556e;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2rem;
+  letter-spacing: 1px;
+}
+
+#trama-bt button:hover {
+  background-color: #338bb4;
+  color: white;
+}
+
+
+#texto-escenario {
+  outline: none;
+  opacity: 0.8;
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+ /********************** Final de estilos css de trama ******************************/
