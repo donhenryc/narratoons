@@ -546,6 +546,7 @@ header {
 }
 
 #trama-bt button {
+  width: 100 px;
   background-color: #20556e;
   color: white;
   font-size: 18px;
