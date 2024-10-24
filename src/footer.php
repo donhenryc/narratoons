@@ -1,4 +1,5 @@
-    <footer>
+     </body>
+     <footer>
         <div class="footer">
             <div>
                 <p>&copy; <?php echo date("Y"); ?> Narratoons.Todos los derechos reservados al alumnado de Inkor Formaciones que desarrollo el proyecto.</p>
@@ -16,5 +17,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="..\public\js\main.js"></script>
-  </body>
+ 
 </html>

@@ -3,7 +3,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $envio = $_POST['envio'];
 
     if ($envio == 'digital') {
-        $cost = 20.00;
+        $cost = 25.00;
         echo "Has seleccionado el formato digital. Te enviaremos el cómic por correo electrónico.<br>";
         echo "El coste es de $" . number_format($cost, 2) . ".";
     } elseif ($envio == 'impreso') {
