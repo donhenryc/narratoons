@@ -52,24 +52,5 @@
   </div>
 </div>
 </section>
-
-   <!--  <div class="formulario-pago">
-    <div class="opciones-formulario">
-        <img id= "img-pago" src="..\public/img/Pago-Digital.png">
-        <img id= "img-pago" src="..\public\img\Pago-Impreso.png">
-    </div>
-    <div class="opciones-formulario">
-    <button class="boton-pago" onclick="submitForm('digital'); updateCost('digital');">
-    En formato digital, a través de correo electrónico.
-    </button>
-    <button class="boton-pago" onclick="submitForm('impreso'); updateCost('impreso');">
-                Impreso, con pasta dura y papel de 100 g.
-    </button>
-    </div>
-</div>
-
-        <p class="coste-pago" id="coste-pago"></p>
-    </div>
- -->
 </section>
 <?php include '..\src\footer.php' ?>
