@@ -404,7 +404,6 @@ header {
 }
 /* FIN estilo Seccion emociones */
 
-<<<<<<< HEAD
 /* INICIO estilo checkout*/
 .checkout-container {
   padding: 15px;
@@ -511,7 +510,6 @@ label {
 }
 
 /* FIN estilo checkout */
-=======
 /* Estilos Seccion estilo comic */
 .fondo-comic {
   background-color: #0ecaee;
@@ -643,7 +641,6 @@ label {
   height: 30px;
 }
 /* FIN Seccion estilo comic */
->>>>>>> 3b9f1727a53456a6f4a282abba1b0f4970a35ec0
 @media (min-width: 576px) {
   .img-btn {
     width: 110px;
