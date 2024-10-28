@@ -333,7 +333,7 @@ header {
 }
 
 /* Botones */
-.btn {
+.btn-emociones {
   padding: 20px 40px;
   margin-left: 10px;
   background-color: #6c757d;
@@ -344,19 +344,19 @@ header {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.div-btn-next {
+.div-btn-next-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 64rem;
 }
-.div-btn-back {
+.div-btn-back-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 49rem;
 }
-.btn-next {
+.btn-next-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -369,7 +369,7 @@ header {
   letter-spacing: 1px;
   gap: 20px;
 }
-.btn-back {
+.btn-back-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -392,19 +392,18 @@ header {
 }
 
 /* Flechitas avance y retroceso */
-.svg-next {
+.svg-next-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
 }
-.svg-back {
+.svg-back-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
 }
 /* FIN estilo Seccion emociones */
 
-<<<<<<< HEAD
 /* INICIO estilo checkout*/
 .checkout-container {
   padding: 15px;
@@ -511,7 +510,6 @@ label {
 }
 
 /* FIN estilo checkout */
-=======
 /* Estilos Seccion estilo comic */
 .fondo-comic {
   background-color: #0ecaee;
@@ -643,7 +641,6 @@ label {
   height: 30px;
 }
 /* FIN Seccion estilo comic */
->>>>>>> 3b9f1727a53456a6f4a282abba1b0f4970a35ec0
 @media (min-width: 576px) {
   .img-btn {
     width: 110px;
@@ -744,7 +741,16 @@ label {
 }
 
  /********************** Estilos css de trama ******************************/
-#estilo-cuerpo {                                 /* Body de trama */
+
+.top-left-image {
+position: absolute; top: 160px; /* Ajusta la distancia desde el borde superior */
+left: 850px; /* Ajusta la distancia desde el borde derecho */
+width: 200px; /* Ajusta el tamaño de la imagen */
+z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
+@media (max-width: 768px)
+{ .top-right-image { display: none; } }
+
+ #estilo-cuerpo {                                 /* Body de trama */
   font-family:sans-serif;
   background-color: #0ecaee;
   display: flex;
@@ -752,6 +758,7 @@ label {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 #trama-cont {
@@ -815,6 +822,14 @@ label {
 /********************** Final de estilos css de trama ******************************/
 
 /********************** Estilos css de personal******************************/
+
+/* .top-right-image { position: absolute; top: 20px; /* Ajusta la distancia desde el borde superior */
+/* right: 20px; Ajusta la distancia desde el borde derecho */
+/* width: 150px; Ajusta el tamaño de la imagen */
+/* z-index: 10; } Oculta la imagen en pantallas pequeñas (móviles) */
+ /* @media (max-width: 768px)
+ { .top-right-image { display: none; } } */
+
 #personal-cuerpo-p {                                 
   font-family:sans-serif;
   background-color: #d87655;
@@ -823,6 +838,7 @@ label {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 #personal-cont {
