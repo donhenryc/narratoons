@@ -333,7 +333,7 @@ header {
 }
 
 /* Botones */
-.btn {
+.btn-emociones {
   padding: 20px 40px;
   margin-left: 10px;
   background-color: #6c757d;
@@ -344,19 +344,19 @@ header {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.div-btn-next {
+.div-btn-next-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 64rem;
 }
-.div-btn-back {
+.div-btn-back-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 49rem;
 }
-.btn-next {
+.btn-next-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -369,7 +369,7 @@ header {
   letter-spacing: 1px;
   gap: 20px;
 }
-.btn-back {
+.btn-back-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -392,12 +392,12 @@ header {
 }
 
 /* Flechitas avance y retroceso */
-.svg-next {
+.svg-next-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
 }
-.svg-back {
+.svg-back-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
@@ -741,7 +741,16 @@ label {
 }
 
  /********************** Estilos css de trama ******************************/
-#estilo-cuerpo {                                 /* Body de trama */
+
+.top-left-image {
+position: absolute; top: 160px; /* Ajusta la distancia desde el borde superior */
+left: 850px; /* Ajusta la distancia desde el borde derecho */
+width: 200px; /* Ajusta el tamaño de la imagen */
+z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
+@media (max-width: 768px)
+{ .top-right-image { display: none; } }
+
+ #estilo-cuerpo {                                 /* Body de trama */
   font-family:sans-serif;
   background-color: #0ecaee;
   display: flex;
@@ -749,6 +758,7 @@ label {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 #trama-cont {
@@ -785,7 +795,7 @@ label {
 }
 
 #trama-bt button {
-  width: 100 px;
+  width: auto;
   background-color: #20556e;
   color: white;
   font-size: 18px;
@@ -809,4 +819,155 @@ label {
   font-family: Arial, sans-serif;
 }
 
- /********************** Final de estilos css de trama ******************************/
+/********************** Final de estilos css de trama ******************************/
+
+/********************** Estilos css de personal******************************/
+
+/* .top-right-image { position: absolute; top: 20px; /* Ajusta la distancia desde el borde superior */
+/* right: 20px; Ajusta la distancia desde el borde derecho */
+/* width: 150px; Ajusta el tamaño de la imagen */
+/* z-index: 10; } Oculta la imagen en pantallas pequeñas (móviles) */
+ /* @media (max-width: 768px)
+ { .top-right-image { display: none; } } */
+
+#personal-cuerpo-p {                                 
+  font-family:sans-serif;
+  background-color: #d87655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#personal-cont {
+  text-align: center;
+  
+}
+
+#titulo-p {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  border: 1.6px solid white;
+  border-radius: 25px;
+  padding: 10px 40px;
+  display: inline-block;
+  background-color: #d87655;
+}
+
+#escenario-p {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  max-width: 800px;
+  margin: 40px auto;
+  color: rgb(132, 132, 145);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#estilo-bt {
+  display: flex;
+  justify-content: flex-end; 
+  gap: 30px;  
+  max-width: 900px;
+  margin:  80px auto;
+}
+
+#estilo-bt button {
+  width: auto;
+  background-color: #20556e;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2 rem;
+  letter-spacing: 1px;
+}
+
+#estilo-bt button:hover {
+  background-color: white;
+  color: white;
+}
+
+
+#texto-escenario {
+  outline: none;
+  opacity: 0.8;
+  border: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Botones */
+.btn {
+  padding: 20px 40px;
+  margin-left: 10px;
+  background-color: #6c757d;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.div-btn-next {
+  position: absolute;
+  z-index: 2;
+  margin-top: 1.5rem;
+  margin-left: 24rem;
+}
+.div-btn-back {
+  position: absolute;
+  z-index: 2;
+  margin-top: 1.5rem;
+  margin-left: 10rem;
+}
+.btn-next {
+  background-color: #20556e;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 2.5rem 0.5rem 3rem;
+  letter-spacing: 1px;
+  gap: 20px;
+}
+.btn-back {
+  background-color: #20556e;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 4rem 0.5rem 3rem;
+  letter-spacing: 1px;
+  gap: 20px;
+}
+.btn-next:hover {
+  background-color: #338bb4;
+  color: white;
+}
+.btn-back:hover {
+  background-color: #338bb4;
+  color: white;
+}
+
+/* Flechitas avance y retroceso */
+.svg-next {
+  color: white;
+  width: 1.5rem;
+  height: 30px;
+}
+.svg-back {
+  color: white;
+  width: 1.5rem;
+  height: 30px;
+}
+/********************** Fin estilos css de personal******************************/
