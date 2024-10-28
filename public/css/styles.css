@@ -194,10 +194,21 @@ header {
   width: 1.5rem;
   position: relative;
 }
+
+/* Inicio CSS footer!*/
+.columna{
+  flex: 1;
+  padding: 10px;
+}
+
 .footer{
+  display: flex;
+  gap: 20px ;
   background-color: #20556e;
   color: white;
 }
+/*Fin footer */
+
 
  /* estilos formulario-pago */
 
