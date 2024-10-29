@@ -67,7 +67,7 @@
     </style>
 
     <h1>Contacto</h1>
-    <form action="procesar_contacta.php" method="post">
+    <form action="Procesar_contacta.php" method="post">
         <div class="form-campo">
             <label for="nombre" class="form-etq">Nombre:</label>
             <input type="text" id="nombre" name="nombre" class="form-input" required>
