@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body id = personal-cuerpo-p>
-    <style> body { margin: 0; padding: 0; height: 100vh; } .top-right-image { position: absolute; top: 20px; /* Ajusta la distancia desde el borde superior */ right: 20px; /* Ajusta la distancia desde el borde derecho */ width: 150px; /* Ajusta el tamaño de la imagen */ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */ @media (max-width: 768px) { .top-right-image { display: none; } } </style> </head> <body> <img src="img/left.webp" alt="Imagen estilo cómic" class="top-right-image"> </body>
+<?php include '..\src\navbar.php' ?>
+<section id = personal-cuerpo-p>
+<img src="img/left.webp" alt="Imagen estilo cómic" class="top-left-image"> </body>
     <div class="container" id="personal-cont">
         <div class="title" id="titulo-p">Personal</div>
         <div class="box" id="escenario-p">
@@ -29,6 +22,5 @@
                  </button>
                  </div>
     </div>
-</body>
-
-</html>
+</section>
+<?php include '..\src\footer.php' ?>

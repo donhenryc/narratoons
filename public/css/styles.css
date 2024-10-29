@@ -194,10 +194,21 @@ header {
   width: 1.5rem;
   position: relative;
 }
+
+/* Inicio CSS footer!*/
+.columna{
+  flex: 1;
+  padding: 10px;
+}
+
 .footer{
+  display: flex;
+  gap: 20px ;
   background-color: #20556e;
   color: white;
 }
+/*Fin footer */
+
 
  /* estilos formulario-pago */
 
@@ -294,7 +305,7 @@ header {
   border: white solid;
   width: 900px;
   margin: 0 auto;
-  color:white
+  color:white;
 }
 
 .scroll-container {
@@ -333,7 +344,7 @@ header {
 }
 
 /* Botones */
-.btn {
+.btn-emociones {
   padding: 20px 40px;
   margin-left: 10px;
   background-color: #6c757d;
@@ -344,19 +355,19 @@ header {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.div-btn-next {
+.div-btn-next-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 64rem;
 }
-.div-btn-back {
+.div-btn-back-emociones {
   position: absolute;
   z-index: 2;
   margin-top: 2rem;
   margin-left: 49rem;
 }
-.btn-next {
+.btn-next-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -369,7 +380,7 @@ header {
   letter-spacing: 1px;
   gap: 20px;
 }
-.btn-back {
+.btn-back-emociones {
   background-color: #20556e;
   color: white;
   display: flex;
@@ -392,12 +403,12 @@ header {
 }
 
 /* Flechitas avance y retroceso */
-.svg-next {
+.svg-next-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
 }
-.svg-back {
+.svg-back-emociones {
   color: white;
   width: 1.5rem;
   height: 30px;
@@ -510,6 +521,79 @@ label {
 }
 
 /* FIN estilo checkout */
+
+
+/* ESTILO formulario contacto */
+
+
+    /* Contenedor principal del formulario de contacto */
+    .contacto-cont {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilo para cada campo del formulario */
+  .form-campo {
+      margin-bottom: 15px;
+  }
+
+  /* Etiquetas de los campos del formulario */
+  .form-etq {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+  }
+
+  /* Campos de entrada de texto y correo */
+  .form-input, .form-area {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+  }
+
+  /* Botón de envío del formulario */
+  .btn-enviar {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      font-weight: bold;
+  }
+
+  /* Efecto hover para el botón */
+  .btn-enviar:hover {
+      background-color: #45a049;
+  }
+
+  /* Adaptación para pantallas pequeñas */
+  @media (max-width: 600px) {
+      .contacto-cont {
+          padding: 15px;
+          border: none;
+          box-shadow: none;
+      }
+
+      .btn-enviar {
+          padding: 10px;
+      }
+  }
+
+
+
+/* FINAL estilos FORMULARIO CONTACTA */
+
+
 /* Estilos Seccion estilo comic */
 .fondo-comic {
   background-color: #0ecaee;
@@ -741,7 +825,16 @@ label {
 }
 
  /********************** Estilos css de trama ******************************/
-#estilo-cuerpo {                                 /* Body de trama */
+
+.top-left-image {
+position: absolute; top: 160px; /* Ajusta la distancia desde el borde superior */
+left: 850px; /* Ajusta la distancia desde el borde derecho */
+width: 200px; /* Ajusta el tamaño de la imagen */
+z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
+@media (max-width: 768px)
+{ .top-right-image { display: none; } }
+
+ #estilo-cuerpo {                                 /* Body de trama */
   font-family:sans-serif;
   background-color: #0ecaee;
   display: flex;
@@ -749,6 +842,7 @@ label {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 #trama-cont {
@@ -812,6 +906,14 @@ label {
 /********************** Final de estilos css de trama ******************************/
 
 /********************** Estilos css de personal******************************/
+
+/* .top-right-image { position: absolute; top: 20px; /* Ajusta la distancia desde el borde superior */
+/* right: 20px; Ajusta la distancia desde el borde derecho */
+/* width: 150px; Ajusta el tamaño de la imagen */
+/* z-index: 10; } Oculta la imagen en pantallas pequeñas (móviles) */
+ /* @media (max-width: 768px)
+ { .top-right-image { display: none; } } */
+
 #personal-cuerpo-p {                                 
   font-family:sans-serif;
   background-color: #d87655;
@@ -820,6 +922,7 @@ label {
   align-items: center;
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
 #personal-cont {
@@ -952,3 +1055,39 @@ label {
   height: 30px;
 }
 /********************** Fin estilos css de personal******************************/
+
+/********************** Inicio estilos css de FAQS******************************/
+.faqsection{
+  /* max-width: 100vh; */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0ccaee;
+}
+.faq-section{
+  max-width: 800px;
+  margin: 25px auto;
+}
+
+.faq {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.faq:hover {
+  border-color: #007BFF;
+}
+.faq h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #007BFF;
+}
+.faq p {
+  display: none;
+  font-size: 0.9em;
+  margin-top: 10px;
+  color: #555;
+}
+/********************** Fin estilos css de FAQS******************************/

@@ -4,7 +4,7 @@
             // Crear un formulario oculto y enviar el valor del botón clicado
             const form = document.createElement('form');
             form.method = 'POST';
-            form.action = 'procesar_formulario.php';
+            form.action = 'procesar_pago.php';
 
             const input = document.createElement('input');
             input.type = 'hidden';
