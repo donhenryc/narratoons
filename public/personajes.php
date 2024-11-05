@@ -1,9 +1,9 @@
 <?php include '..\src\navbar.php' ?>
 
 
-<section id = "personajes" class="animacion-entrada">
+<section id = "personajes" class="">
 <div class="fondo-personajes">
-<div class=" container-md body-person d-flex">
+<div class=" container-md d-flex">
 
 <div class="container shadow-lg border-info rounded-4 frm-personajes">
       <h2 class="mb-4 mt-4 text-center fw-bold h2-personajes">Personajes</h2>
@@ -14,6 +14,7 @@
               <input
                 type="text"
                 class="form-control"
+                style="height: 40px;"
                 name="personaje[]"
                 placeholder="Nombre"
                 required
@@ -23,6 +24,7 @@
               <input
                 type="text"
                 class="form-control"
+                style="height: 40px;"
                 name="rol[]"
                 placeholder="Rol del personaje"
                 required
@@ -46,8 +48,8 @@
       </form>
       
     </div>
-    <div class="div-btn-next">
-      <button type="submit" class="btn-next">Continuar
+    <div class="div-btn-continuar">
+      <button type="submit" class="btn-general" onclick="window.location.href='emociones.php'; nextSection(index, personajes)">Continuar
             <svg class="svg-next" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
@@ -55,7 +57,7 @@
        </div>
 
      <div class="img-person">
-        <img class="img-person" src="Image20241017183204.png" alt="">
+        <img class="img-person"  style="width: 650px;" src="Image20241017183204.png" alt="">
     </div>
     
 </div>

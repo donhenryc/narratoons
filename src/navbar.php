@@ -41,10 +41,10 @@
         </ul>
         <!-- Botones -->
         <div class="d-flex">
-          <button class="btn own-btn me-2" type="button">
+          <button class="btn login-btn me-2" type="button">
             Inicio de Sesión
           </button>
-          <button class="btn own-btn" type="button">Registrarse</button>
+          <button class="btn login-btn" type="button">Registrarse</button>
         </div>
       </div>
     </div>

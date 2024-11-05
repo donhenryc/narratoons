@@ -2,9 +2,110 @@
   background-color: #20556e;
 }
 
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #d87655;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #20556e;
+  border-radius: 20px;
+  border: 3px solid #d87655;
+}
+
+/* ************************Estilos para todos los botones del sitio **********************************/
+.login-btn {
+  background-color: #d87655 !important;
+  color: white;
+  width: 12rem;
+  padding: 0.5rem 0.5rem 0.3rem 0.5rem;
+  border: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background-color: rgb(9, 9, 65) !important;
+  color: white;
+}
+
+.img-btn {
+  width: 100px;
+}
+.img-btn-1 {
+  margin-top: 18rem;
+  margin-left: 2rem;
+}
+.img-btn-2 {
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+#add-personaje-btn {
+  background-color: #20556e;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+#add-personaje-btn:hover {
+  background-color: #338bb4;
+  color: white;
+}
+.plus-person {
+  color: #edeff0;
+  width: 1.2rem;
+}
+
+.div-btn-continuar {
+  position: absolute;
+  margin-top: 35.5rem;
+  margin-left: 24rem;
+}
+.btn-general {
+  background-color: #20556e;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 4rem 0.3rem 4rem;
+  letter-spacing: 1px;
+}
+.btn-general:hover {
+  background-color: #338bb4;
+  color: white;
+}
+
+.svg-next {
+  color: white;
+  width: 1.5rem;
+  position: relative;
+}
+.svg-back {
+  color: white;
+  width: 1.5rem;
+  margin-right: 3px;
+}
+
+.div-btn-continuar-emociones {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 64rem;
+}
+.div-btn-back-emociones {
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: 49rem;
+}
+
+/************************************** fin de estilo de los Botones **********************************************/
+
 .own-ul {
   margin: 0 auto;
-  gap: 45px;
+  gap: 35px;
 }
 
 .nav-link {
@@ -22,7 +123,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1040;
   display: none;
@@ -71,41 +172,11 @@ header {
   width: 100px;
 }
 
-.own-btn {
-  background-color: #d87655 !important;
-  color: white;
-  width: 12rem;
-  padding: 0.3rem 0.5rem 0.3rem 0.5rem;
-  border: none;
-  font-family: sans-serif;
-  font-weight: 600;
-}
+/****** ESTILOS PARA EL FORMULARIO DONDE SE AGREGAN LOS PERSONAJES******************** */
 
-.own-btn:hover {
-  background-color: rgb(9, 9, 65) !important;
-  color: white;
-}
-
-.img-btn {
-  width: 100px;
-}
-.img-btn-1 {
-  margin-top: 18rem;
-  margin-left: 2rem;
-}
-.img-btn-2 {
-  margin-top: 10rem;
-  margin-left: 5rem;
-}
-
-/* ESTILOS PARA EL FORMULARIO DONDE SE AGREGAN LOS PERSONAJES */
-
-.body-person {
-  background-color: #0ecaee;
-}
 .fondo-personajes {
   background-color: #0ecaee;
-  height: 100vh;
+  height: 90vh;
 }
 
 .frm-personajes {
@@ -114,31 +185,16 @@ header {
   width: 45%;
   height: 30rem !important;
   border-radius: 25%;
-  /* border: #838383 3px solid !important; */
-  box-shadow: #09173d;
+  box-shadow: #000208;
 }
 
 .h2-personajes {
-  border: rgb(248, 246, 246) solid !important;
+  border: 2px rgb(248, 246, 246) solid !important;
   border-radius: 25px;
   padding: 10px;
-
   color: aliceblue;
 }
-#add-personaje-btn {
-  background-color: #20556e;
-  color: aliceblue;
-  font-weight: 600;
-}
 
-#add-personaje-btn:hover {
-  background-color: #338bb4;
-  color: white;
-}
-
-.img-person {
-  width: 650px;
-}
 .p-person {
   margin: 0 auto;
   font-size: 20px;
@@ -149,70 +205,24 @@ header {
   background-color: #d87655;
   text-align: center;
 }
-.btn-person {
-  width: 10px !important  ;
-}
-.plus-person {
-  color: #edeff0;
-  width: 2rem;
-}
-
-/* .btn-remove-personaje {
-  background-color: #75acc7;
-} */
-
-/* .plus-person:hover {
-  background-color: #d87655;
-  color: #20556e;
-  border: 2px #0ccaee;
-  border-radius: 10%;
-} */
-
-.div-btn-next {
-  position: absolute;
-  z-index: 2;
-  margin-top: 35.5rem;
-  margin-left: 27rem;
-}
-.btn-next {
-  background-color: #20556e;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2rem 0.5rem 2rem;
-  letter-spacing: 1px;
-}
-.btn-next:hover {
-  background-color: #338bb4;
-  color: white;
-}
-
-.svg-next {
-  color: white;
-  width: 1.5rem;
-  position: relative;
-}
 
 /* Inicio CSS footer!*/
-.columna{
+.columna {
   flex: 1;
   padding: 10px;
 }
 
-.footer{
+.footer {
   display: flex;
-  gap: 20px ;
+  gap: 20px;
   background-color: #20556e;
   color: white;
 }
 /*Fin footer */
 
+/* estilos formulario-pago */
 
- /* estilos formulario-pago */
-
- .cuerpo-pago {
+.cuerpo-pago {
   background-color: #d87655;
   font-family: Arial, sans-serif;
   display: flex;
@@ -239,7 +249,7 @@ header {
   display: flex;
 }
 .boton-pago {
-  color:white;
+  color: white;
   text-align: center;
   display: block;
   width: 100%;
@@ -249,7 +259,7 @@ header {
   cursor: pointer;
   border: 10px #051806;
   background-color: #0ecaee;
-  border-radius: 10px ;
+  border-radius: 10px;
 }
 .opciones-formulario .boton-pago:hover {
   background-color: #ddd;
@@ -260,24 +270,23 @@ header {
   font-weight: bold;
   margin-top: 20px;
 }
-.img-pago{
+.img-pago {
   background-size: cover;
   background-position: center;
 }
-.titulo-pago{
+.titulo-pago {
   width: 100%;
   padding-top: 15px;
-
 }
-.texto-pago{
+.texto-pago {
   text-align: center;
   border: #ffffff 2px solid;
   border-radius: 15px;
   width: 500px;
   margin: 0 auto;
-  color:white;
+  color: white;
 }
-.fondo-pago{
+.fondo-pago {
   background-color: #d87655;
 }
 
@@ -286,17 +295,16 @@ header {
 /* Estilos Seccion Emociones */
 .fondo-emociones {
   background-color: #d87655;
-  height: 100vh;
+  height: 89vh;
   padding: 40px;
 }
-.container-emociones {
+.container-scroll {
   text-align: center;
   display: flex;
   justify-content: center;
   gap: 50px;
   margin-top: 50px;
 }
-
 .texto-titulo {
   font-weight: bold;
   text-align: center;
@@ -305,7 +313,7 @@ header {
   border: white solid;
   width: 900px;
   margin: 0 auto;
-  color:white;
+  color: white;
 }
 
 .scroll-container {
@@ -317,11 +325,11 @@ header {
   padding: 10px;
   width: 500px;
   border-radius: 10px;
-  max-height: 435px;/* Limita la altura para permitir el scroll */
+  max-height: 490px;
 }
 
 .emotion {
-  padding: 25px 40px;
+  padding: 20px 35px;
   margin: 10px;
   color: white;
   background-color: #338bb4;
@@ -333,96 +341,24 @@ header {
   transform: scale(1.1);
   background-color: #0ecaee;
 }
-/* Imagen emociones */
 
-.img-emociones{
+.img-emociones {
   text-align: right;
   width: 400px;
 }
-#img_emociones{
+#img_emociones {
   width: 450px;
 }
 
-/* Botones */
-.btn-emociones {
-  padding: 20px 40px;
-  margin-left: 10px;
-  background-color: #6c757d;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.div-btn-next-emociones {
-  position: absolute;
-  z-index: 2;
-  margin-top: 2rem;
-  margin-left: 64rem;
-}
-.div-btn-back-emociones {
-  position: absolute;
-  z-index: 2;
-  margin-top: 2rem;
-  margin-left: 49rem;
-}
-.btn-next-emociones {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2.5rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-back-emociones {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 4rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-next:hover {
-  background-color: #338bb4;
-  color: white;
-}
-.btn-back:hover {
-  background-color: #338bb4;
-  color: white;
-}
-
-/* Flechitas avance y retroceso */
-.svg-next-emociones {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
-.svg-back-emociones {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
 /* FIN estilo Seccion emociones */
 
 /* INICIO estilo checkout*/
 .checkout-container {
   padding: 15px;
   background-color: #0ecaee;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   max-width: 100%;
   max-height: 100%;
-  
 }
 
 .checkout-titulo {
@@ -473,7 +409,7 @@ label {
 .form-control:focus {
   border-color: #3498db;
   outline: none;
-  box-shadow: 0 0 0 3px rgba(52,152,219,0.1);
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
 .form-control::placeholder {
@@ -491,7 +427,7 @@ label {
   background: #3498db;
   width: 200px; /* Ancho fijo para el botón */
   padding: 15px 30px;
-  color: black;    
+  color: black;
   border: none;
   border-radius: 25px; /* Más redondeado */
   font-size: 1.1rem;
@@ -499,7 +435,7 @@ label {
   cursor: pointer;
   transition: all 0.3s ease;
   margin: 2rem auto; /* Centrado horizontalmente */
-  display: block;    /* Para que el margin auto funcione */
+  display: block; /* Para que el margin auto funcione */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -513,7 +449,7 @@ label {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .checkout-container {
     padding: 1rem;
     margin: 1rem;
@@ -522,97 +458,73 @@ label {
 
 /* FIN estilo checkout */
 
-
-
-/*ESTILO procesar contacta*/
-
-/*FIN procesar contacta*/
-
-
-
 /* ESTILO formulario contacto */
 
+.contacto-cont {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-    /* Contenedor principal del formulario de contacto */
-    .contacto-cont {
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      background-color: #f9f9f9;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.form-campo {
+  margin-bottom: 15px;
+}
+
+.form-etq {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-area {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.btn-enviar {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-enviar:hover {
+  background-color: #45a049;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 600px) {
+  .contacto-cont {
+    padding: 15px;
+    border: none;
+    box-shadow: none;
   }
 
-  /* Estilo para cada campo del formulario */
-  .form-campo {
-      margin-bottom: 15px;
-  }
-
-  /* Etiquetas de los campos del formulario */
-  .form-etq {
-      font-weight: bold;
-      display: block;
-      margin-bottom: 5px;
-  }
-
-  /* Campos de entrada de texto y correo */
-  .form-input, .form-area {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
-  }
-
-  /* Botón de envío del formulario */
   .btn-enviar {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      width: 100%;
-      font-size: 1rem;
-      font-weight: bold;
+    padding: 10px;
   }
-
-  /* Efecto hover para el botón */
-  .btn-enviar:hover {
-      background-color: #45a049;
-  }
-
-  /* Adaptación para pantallas pequeñas */
-  @media (max-width: 600px) {
-      .contacto-cont {
-          padding: 15px;
-          border: none;
-          box-shadow: none;
-      }
-
-      .btn-enviar {
-          padding: 10px;
-      }
-  }
-
-
+}
 
 /* FINAL estilos FORMULARIO CONTACTA */
-
 
 /* Estilos Seccion estilo comic */
 .fondo-comic {
   background-color: #0ecaee;
   height: 100vh;
   padding: 40px;
-}
-.container-comic {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 50px;
 }
 
 .texto-titulo-comic {
@@ -623,19 +535,7 @@ label {
   border: white solid;
   width: 900px;
   margin: 0 auto;
-  color:white;
-}
-
-.scroll-container-comic {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-  white-space: nowrap;
-  border: 1px solid #ddd;
-  padding: 10px;
-  width: 500px;
-  border-radius: 10px;
-  max-height: 490px;/* Limita la altura para permitir el scroll */
+  color: white;
 }
 
 .estilo-comic {
@@ -651,28 +551,15 @@ label {
   transform: scale(1.1);
   background-color: #6c757d;
 }
-/* Imagen estilo comic */
 
-.img-comic{
+.img-comic {
   text-align: right;
   width: 800px;
 }
-#img_comic{
+#img_comic {
   width: 850px;
 }
 
-/* Botones */
-.btn {
-  padding: 20px 40px;
-  margin-left: 10px;
-  background-color: #6c757d;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
 .div-btn-next {
   position: absolute;
   z-index: 2;
@@ -685,52 +572,7 @@ label {
   margin-top: 2rem;
   margin-left: 49rem;
 }
-.btn-next {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2.5rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-back {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 4rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-next:hover {
-  background-color: #338bb4;
-  color: white;
-}
-.btn-back:hover {
-  background-color: #338bb4;
-  color: white;
-}
 
-/* Flechitas avance y retroceso */
-.svg-next {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
-.svg-back {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
 /* FIN Seccion estilo comic */
 @media (min-width: 576px) {
   .img-btn {
@@ -831,18 +673,24 @@ label {
   animation: animacion-salida-derecha 1s;
 }
 
- /********************** Estilos css de trama ******************************/
+/********************** Estilos css de trama ******************************/
 
 .top-left-image {
-position: absolute; top: 160px; /* Ajusta la distancia desde el borde superior */
-left: 850px; /* Ajusta la distancia desde el borde derecho */
-width: 200px; /* Ajusta el tamaño de la imagen */
-z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
-@media (max-width: 768px)
-{ .top-right-image { display: none; } }
+  position: absolute;
+  top: 160px; /* Ajusta la distancia desde el borde superior */
+  left: 850px; /* Ajusta la distancia desde el borde derecho */
+  width: 200px; /* Ajusta el tamaño de la imagen */
+  z-index: 10;
+} /* Oculta la imagen en pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .top-right-image {
+    display: none;
+  }
+}
 
- #estilo-cuerpo {                                 /* Body de trama */
-  font-family:sans-serif;
+#estilo-cuerpo {
+  /* Body de trama */
+  font-family: sans-serif;
   background-color: #0ecaee;
   display: flex;
   justify-content: center;
@@ -877,32 +725,6 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#trama-bt {
-  display: flex;
-  justify-content: flex-end; 
-  gap: 30px;  
-  max-width: 900px;
-  margin:  40px auto;
-}
-
-#trama-bt button {
-  width: auto;
-  background-color: #20556e;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2rem;
-  letter-spacing: 1px;
-}
-
-#trama-bt button:hover {
-  background-color: #338bb4;
-  color: white;
-}
-
-
 #texto-escenario {
   outline: none;
   opacity: 0.8;
@@ -914,27 +736,16 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
 
 /********************** Estilos css de personal******************************/
 
-/* .top-right-image { position: absolute; top: 20px; /* Ajusta la distancia desde el borde superior */
-/* right: 20px; Ajusta la distancia desde el borde derecho */
-/* width: 150px; Ajusta el tamaño de la imagen */
-/* z-index: 10; } Oculta la imagen en pantallas pequeñas (móviles) */
- /* @media (max-width: 768px)
- { .top-right-image { display: none; } } */
-
-#personal-cuerpo-p {                                 
-  font-family:sans-serif;
+#personal-cuerpo-p {
+  font-family: sans-serif;
   background-color: #d87655;
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 #personal-cont {
   text-align: center;
-  
 }
 
 #titulo-p {
@@ -958,32 +769,6 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#estilo-bt {
-  display: flex;
-  justify-content: flex-end; 
-  gap: 30px;  
-  max-width: 900px;
-  margin:  80px auto;
-}
-
-#estilo-bt button {
-  width: auto;
-  background-color: #20556e;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2 rem;
-  letter-spacing: 1px;
-}
-
-#estilo-bt button:hover {
-  background-color: white;
-  color: white;
-}
-
-
 #texto-escenario {
   outline: none;
   opacity: 0.8;
@@ -991,86 +776,15 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
   font-family: Arial, sans-serif;
 }
 
-/* Botones */
-.btn {
-  padding: 20px 40px;
-  margin-left: 10px;
-  background-color: #6c757d;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-.div-btn-next {
-  position: absolute;
-  z-index: 2;
-  margin-top: 1.5rem;
-  margin-left: 24rem;
-}
-.div-btn-back {
-  position: absolute;
-  z-index: 2;
-  margin-top: 1.5rem;
-  margin-left: 10rem;
-}
-.btn-next {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 2.5rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-back {
-  background-color: #20556e;
-  color: white;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 4rem 0.5rem 3rem;
-  letter-spacing: 1px;
-  gap: 20px;
-}
-.btn-next:hover {
-  background-color: #338bb4;
-  color: white;
-}
-.btn-back:hover {
-  background-color: #338bb4;
-  color: white;
-}
-
-/* Flechitas avance y retroceso */
-.svg-next {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
-.svg-back {
-  color: white;
-  width: 1.5rem;
-  height: 30px;
-}
 /********************** Fin estilos css de personal******************************/
 
 /********************** Inicio estilos css de FAQS******************************/
-.faqsection{
-  /* max-width: 100vh; */
+.faqsection {
   margin: 0 auto;
   padding: 20px;
   background-color: #0ccaee;
 }
-.faq-section{
+.faq-section {
   max-width: 800px;
   margin: 25px auto;
 }
@@ -1084,12 +798,12 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
   cursor: pointer;
 }
 .faq:hover {
-  border-color: #007BFF;
+  border-color: #007bff;
 }
 .faq h3 {
   margin: 0;
   font-size: 1.1em;
-  color: #007BFF;
+  color: #007bff;
 }
 .faq p {
   display: none;
@@ -1101,26 +815,24 @@ z-index: 10; } /* Oculta la imagen en pantallas pequeñas (móviles) */
 
 /********************** Inicio estilos css de Galeria******************************/
 
-/* Estilos para la Galería */
-.galeria-section{
-  /* max-width: 100vh; */
+.galeria-section {
   margin: 0 auto;
   padding: 20px;
   background-color: #0ccaee;
 }
-.sub-titulo{
+.sub-titulo {
   font-size: 1.5em;
   text-align: center;
   margin: 20px;
 }
- /* Estilos para la Galería */
- .gallery-section {
+.gallery-section {
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-top: 30px;
 }
-.gallery1, .gallery2 {
+.gallery1,
+.gallery2 {
   display: flex;
   gap: 10px;
   justify-content: center;

@@ -1,12 +1,11 @@
-
 /* manejo de las transiciones de las paginas */
 
 function nextSection(seccionActual, siguienteSeccion) {
-  let seccionActual = document.getElementById(seccionActual);
-  let siguienteSeccion = ducument.getElementById(siguienteSeccion);
+  let actual = document.getElementById(seccionActual);
+  let siguiente = ducument.getElementById(siguienteSeccion);
 
-  seccionActual.classList.remove('animacion-entrada');
-  seccionActual.classList.add('animacion-salida');
+  actual.classList.remove("animacion-salida");
+  siguiente.classList.add("animacion-entrada");
 }
 
 /* PARA CONTROLAR EL MENU MOVIL */
@@ -91,5 +90,3 @@ document
 
 // Actualizar el estado de los botones "Eliminar" al cargar la página
 updateRemoveButtonState();
-
-
